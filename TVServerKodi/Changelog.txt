@@ -1,26 +1,57 @@
+1.32.0.145 John Calvi
+- Use .NET framework v4.8 (matches MediaPortal 2.5)
+- Updated: reference assemblies for MediaPortal 2.5 TVServer 1.32.000.0
+- Update reported version as 1.32.0.145
+- Note: Build version needs to be > 140 otherwise MediaportalPVR addon will complain about version.
+
+1.23.0.144:
+- Updated: reference assemblies for MediaPortal 2.3 TVServer 1.23.100
+
+1.23.0.143:
+- Updated: reference assemblies for MediaPortal 2.2.2 TVServer 1.23.0
+
+1.22.0.142:
+- Fixed: report an error when no TV channels are found (e.g. when group names do not exist)
+- Added: allow addition of TV webstreams. Choose DVB-IP, add the URL and set network id, transport id, service id and pmt pid all to 0
+         MediaPortal won't be able to play these streams, but the PVR addon will just pass the URL to Kodi for playback
+
+1.21.0.141:
+- Updated: reference assemblies for Mediaportal 2.2.1 TVServer 1.21.100
+
 1.20.0.140:
 - Added: GetRecordingInfo: Allow resolving the hostname in an RTSP url to an IP-address
 - Fixed: GetRecordingInfo should return the same fields as getrecordings
 - Extended debug logging for adding schedules
-- Fixed: DataWriter could throw an unhandled exception during TVService shutdown
 
-1.15.0.137:
+1.20.0.139:
+- Use .NET framework v4.7 (matches MediaPortal 2.2)
+- Updated: reference assemblies for MediaPortal 2.2 pre TVServer 1.20.0
+
+1.18.0.138:
+- Updated: reference assemblies for MediaPortal 2.1.2 TVServer 1.18.0
+
+1.16.0.137:
+- Updated: reference assemblies for MediaPortal 2.1 final TVServer 1.16.0
+
+1.15.100.137:
+- Updated: references assemblies for MediaPortal 2.1-pre release TVServer 1.15.100
+
+1.13.100.137:
 - Fixed: Use URL escaping for the GetRecordingInfo and GetScheduleInfo commands to accept fields with enters inside
   This fixes recording playback for in progress recordings when the description fields contains a multi-line string
 
-1.15.0.136:
+1.13.100.136:
 - Added: Support for detecting the recording type (TV, Radio, webstream)
 - Fixed: Add additional exception handling around the GetRecordingURL() function
 
-1.15.0.135:
+1.13.100.135:
 - Added: IPv6 support (Vista and above)
 
-1.15.0.134:
-- Updated: referenced assemblies for TVServer 1.15.0 (final)
+1.13.100.134:
 - Fixed: GetDriveSpace function for network shares and large disks (credits: Timothy Massing)
 
-1.14.0.133:
-- Updated: referenced assemblies for TVServer 1.14.0 (final)
+1.13.100.133:
+- Updated: referenced assemblies for Mediaportal 2 Spring '16 TVServer 1.13.100
 - Updated: solution to VS2013
 
 1.12.0.132:
@@ -201,5 +232,5 @@
 1.0.6.0:
 - Different date/time formatting to make the date/time fields locale/culture independent.
 
-1.0.5.0: 
+1.0.5.0:
 - Fix IPv6 name resolving. Should be always IPv4 now.

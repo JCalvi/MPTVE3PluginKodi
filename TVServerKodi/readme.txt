@@ -1,4 +1,4 @@
-TVServerKodi v1.10.x - Source package
+TVServerKodi v1.32.x - Source package
 MediaPortal TVServer plugin for XBMC/Kodi
 _______________________________________________________________________________
 Original Author: EvilDude/Prashant 2008-2009
@@ -7,9 +7,16 @@ http://forum.team-mediaportal.com/mediaportal-1-talk-45/xbmc-python-script-36590
 Improvements & XBMC/Kodi PVR-Addon extensions:
 Marcel Groothuis, 2010-2015
 http://www.scintilla.utwente.nl/~marcelg/xbmc
+
+Updated for Mediaportal 2.5
+John Calvi, 2024
+https://github.com/JCalvi/MPTVE3PluginKodi/tree/master/TVServerKodi
 _______________________________________________________________________________
 
 Tested against:
+- MediaPortal 2.5
+
+Older versions.
 - MediaPortal 1.3.0 - MediaPortal 1.10.0
 This version is not compatible with 1.2.x and 1.3.0 alpha
 
@@ -17,7 +24,9 @@ This version is compatible with the "MediaPortal" PVR addon for XBMC/Kodi
 _______________________________________________________________________________
 
 _[ General ]___________________________________________________________________
-This plugin assumes the usage of MySQL as database backend for the MediaPortal
+New: This plugin assumes the use of MediaPortal 2.5 TVE3 Server that uses sqllite.
+
+Old: This plugin assumes the usage of MySQL as database backend for the MediaPortal
 TV Server. When you are using Microsoft's SQL server instead, you will need to
 change the Gentle.config file.
 
@@ -43,7 +52,7 @@ If the debug version works fine, you can build the plugin version:
    Save the project and build again. The resulting binary should now have a
    .dll extension.
 6. Install the TVServerKodi.dll plugin and test it. See below.
-   
+
 
 _[ Installation ]______________________________________________________________
 
@@ -60,14 +69,14 @@ TVServer plugin version
      - Wait a few seconds
      - Delete the existing TVServerKodi.dll in Plugins/ directory of your
        MediaPortal TV Server directory
-  1. Copy to the Plugins/ directory of your MediaPortal TV Server directory, 
+  1. Copy to the Plugins/ directory of your MediaPortal TV Server directory,
   2. Restart the TVService:
      Open a command line console (Start -> run -> cmd.exe)
        net stop TVService
        net start TVService
   3. Start the MediaPortal "TV-Server Configuration tool".
   4. Enable the "TVServerKodi" plugin under "Plugins".
-  
+
 _[ Test the TVServerKodi ]_____________________________________________________
 Test the plugin/standalone version:
 
